@@ -2,4 +2,4 @@
 
 Testing Github Action for the Hackathon.
 
-Sun
+Su
