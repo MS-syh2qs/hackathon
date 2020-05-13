@@ -11,5 +11,4 @@ jobs:
         - uses: actions/checkout@v2
         - name: Echo Error
           run: echo "::error::ERROR"
-        - name: Only run this if file README exists
-          run: '(test -f README && echo README exists) || echo "::error::Error is thrown here message"
+
