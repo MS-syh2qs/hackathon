@@ -12,4 +12,4 @@ jobs:
         - name: Echo Error
           run: echo ERROR
         - name: Only run this if file README exists
-          run: '(test -f README2.md && echo README exists) || echo "::error::Error is thrown here message"
+          run: '(test -f README && echo README exists) || echo "::error::Error is thrown here message"
