@@ -10,6 +10,4 @@ jobs:
         steps:
         - uses: actions/checkout@v2          
         - name: Check if README.md file exists.
-          run: |
-            if grep -q "Sun" "$README.md"
-            fi
+          run: grep -q "Sun" "$README.md"
