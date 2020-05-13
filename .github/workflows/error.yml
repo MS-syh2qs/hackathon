@@ -10,4 +10,4 @@ jobs:
         steps:
         - uses: actions/checkout@v2          
         - name: Only run this if file README exists
-          run: test -f README
+          run: test -f README.md
