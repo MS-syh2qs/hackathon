@@ -4,7 +4,8 @@ on:
     pull_request:
     branches: [ master ]
     
-  build:
+jobs:
+    build:
     runs-on: ubuntu-latest
     - uses: actions/checkout@v2
     - name: Echo Error
