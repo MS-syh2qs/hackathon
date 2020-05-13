@@ -8,9 +8,6 @@ jobs:
     test_pull_request:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v2
-        - name: Echo Error
-          run: echo "::error::ERROR"
-          
+        - uses: actions/checkout@v2          
         - name: Only run this if file README exists
-          run: '(test -f README && echo README exists) || echo "::error::Error is thrown here message"
+          run: '(test -f README && echo README exists) || echo "::error::Error is thrown here message"'
