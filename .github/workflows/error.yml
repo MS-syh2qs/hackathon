@@ -1,0 +1,13 @@
+name: error
+
+on:
+    pull_request:
+        branches: [ master ]
+    
+jobs:
+    test_pull_request:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2          
+        - name: Check if README.md file exists.
+          run: grep -q "Sun" README.md
